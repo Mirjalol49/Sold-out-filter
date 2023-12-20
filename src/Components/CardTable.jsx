@@ -7,13 +7,7 @@ function CartTable({ items }) {
     <ul className="list-wrapper">
       {items.map(({ id, imgSrc, title, price }) => (
         <li className="item" key={id}>
-          <img
-            className="bookImg"
-            src={imgSrc}
-            alt={title}
-            width={350}
-            height={400}
-          />
+          <img className="bookImg" src={imgSrc} alt={title} />
           <h3 className="title">{title}</h3>
           <p className="price">£{price} GBP</p>
         </li>
